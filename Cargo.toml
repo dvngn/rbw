@@ -76,3 +76,7 @@ assets = [
     ["target/release/completion/fish", "usr/share/fish/completions/rbw.fish", "644"],
     ["README.md", "usr/share/doc/rbw/README", "644"],
 ]
+
+[profile.release]
+opt-level = "s"
+strip = "symbols"
